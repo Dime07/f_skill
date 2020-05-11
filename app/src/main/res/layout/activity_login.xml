@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/login_bg" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="192dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/fskill" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="40dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/email_teks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textColor="@color/ungu"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_below="@id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/teks_pass"
+        android:layout_below="@id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textColor="@color/ungu"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Login"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="220dp"
+        android:textColor="@color/putih" />
+
+    <TextView
+        android:id="@+id/nanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:text="Anda belum punya akun?"
+        android:textSize="16sp"
+        android:textColor="@color/ungu"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textColor="@color/ungu"
+        />
+
+
+
+</RelativeLayout>

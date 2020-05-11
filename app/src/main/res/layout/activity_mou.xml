@@ -112,7 +112,6 @@
             android:id="@+id/btn_daftar2"
             android:layout_width="150dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/confirm"
             android:layout_alignEnd="@+id/imageView4"
             android:layout_alignRight="@+id/imageView4"
             android:layout_alignBottom="@+id/imageView4"
