@@ -28,6 +28,12 @@
         android:layout_marginTop="0dp"
         android:background="@drawable/gradient_ungu">
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bulat" />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -82,7 +88,7 @@
                     android:textColor="@color/ungu"
                     />
                 <TextView
-                    android:id="@+id/bidang"
+                    android:id="@+id/cabang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PMW"
@@ -122,13 +128,86 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="330dp"
-        app:srcCompat="@drawable/kotakpth" />
+        app:srcCompat="@drawable/putih_round" />
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="85dp"
+        android:text="Full Name :"
+        android:textColor="@color/ungu"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="70dp"
+        android:text="Email :"
+        android:textColor="@color/ungu"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/univ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginTop="105dp"
+        android:textColor="@color/ungu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Universitas :" />
+
+    <TextView
+        android:id="@+id/jrsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="85dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/ungu"
+        android:text="Jurusan :" />
+
+    <TextView
+        android:id="@+id/kbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/ungu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="KBK :" />
+
+    <TextView
+        android:id="@+id/ahli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/ungu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Keahlian :" />
 
 
 </RelativeLayout>
