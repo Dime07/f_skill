@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_name">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgorund_abu"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/ungu"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_ungu">
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/putih">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KBK"
+                    android:textSize="23sp"
+                    android:textColor="@color/ungu"
+                    />
+                <TextView
+                    android:id="@+id/bidang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Riset"
+                    android:textColor="@color/ungu"
+                    android:textSize="23sp"
+                    android:paddingTop="20sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/putih">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cabang"
+                    android:textSize="23sp"
+                    android:textColor="@color/ungu"
+                    />
+                <TextView
+                    android:id="@+id/bidang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PMW"
+                    android:textColor="@color/ungu"
+                    android:textSize="23sp"
+                    android:paddingTop="20sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/putih">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:textSize="23sp"
+                    android:textColor="@color/ungu"
+                    />
+                <TextView
+                    android:id="@+id/video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/ungu"
+                    android:textSize="23sp"
+                    android:paddingTop="20sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        app:srcCompat="@drawable/kotakpth" />
+
+
+</RelativeLayout>

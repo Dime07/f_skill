@@ -5,6 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="ungu">#803496</color>
     <color name="putih">#FFFFFF</color>
-    <color name="ungugelap">#2B2B2B</color>
+    <color name="ungugelap">#633F97</color>
     <color name="hitam">#000000</color>
+    <color name="abu_abu">#ECECEC</color>
 </resources>
