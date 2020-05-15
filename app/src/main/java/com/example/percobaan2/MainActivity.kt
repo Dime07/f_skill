@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,9 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //val tombol = findViewById<Button>(R.id.btn_daftar)
-      //  tombol.setOnClickListener {
-      //      startActivity(Intent(this, Halo::class.java))
-       // }
+        btn_login.setOnClickListener {
+            startActivity(Intent(this, login::class.java))
+        }
     }
 }

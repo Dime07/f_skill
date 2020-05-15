@@ -19,49 +19,84 @@
         android:layout_height="121dp"
         app:srcCompat="@drawable/fskill" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_lgin"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="50dp"
-        android:text="" />
+        android:layout_below="@id/tutor3"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Email">
 
-    <TextView
-        android:id="@+id/email_teks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
-        android:layout_marginLeft="50dp"
-        android:text="Email"
-        android:textSize="16sp"
-        android:textColor="@color/ungu"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-    <EditText
-        android:id="@+id/pass"
-        android:layout_below="@id/email"
-        android:layout_width="wrap_content"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass_lgin"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="50dp"
-        android:text="" />
+        android:layout_below="@id/email_lgin"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Password">
 
-    <TextView
-        android:id="@+id/teks_pass"
-        android:layout_below="@id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="50dp"
-        android:text="Password"
-        android:textSize="16sp"
-        android:textColor="@color/ungu"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/email"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:layout_marginTop="230dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:text="" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/email_teks"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="210dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:text="Email"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/ungu"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/pass"-->
+<!--        android:layout_below="@id/email"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:text="" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/teks_pass"-->
+<!--        android:layout_below="@id/email"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:text="Password"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/ungu"-->
+<!--        />-->
 
     <Button
         android:id="@+id/btn_login"
@@ -69,7 +104,8 @@
         android:layout_height="35dp"
         android:background="@drawable/buttonstyle"
         android:text="Login"
-        android:layout_marginTop="400dp"
+        android:layout_below="@id/pass_lgin"
+        android:layout_marginTop="32dp"
         android:layout_marginLeft="220dp"
         android:textColor="@color/putih" />
 
