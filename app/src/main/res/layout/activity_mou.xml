@@ -23,7 +23,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="450dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
@@ -109,7 +109,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_daftar2"
+            android:id="@+id/btn_daftar5"
             android:layout_width="150dp"
             android:layout_height="35dp"
             android:layout_alignEnd="@+id/imageView4"

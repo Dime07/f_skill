@@ -15,5 +15,13 @@ class MainActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             startActivity(Intent(this, login::class.java))
         }
+
+        btn_tutor.setOnClickListener {
+            startActivity(Intent(this, daftar_tutor::class.java))
+        }
+
+        btn_daftar.setOnClickListener {
+            startActivity(Intent(this, Halo::class.java))
+        }
     }
 }

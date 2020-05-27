@@ -22,7 +22,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="450dp"
+            android:layout_width="match_parent"
             android:scaleType="centerCrop"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -35,85 +35,110 @@
             android:layout_marginBottom="0dp"
             app:srcCompat="@drawable/bg2" />
 
-
-        <EditText
-            android:id="@+id/fullname"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nama_lengkap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="210dp"
-            android:background="@drawable/isi_style"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:text="Full name" />
+            android:textColorHint="@color/ungu"
+            android:hint="Nama Lengkap"
+            android:layout_marginTop="180dp"
+            app:boxBackgroundColor="@color/putih"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
-            android:layout_below="@+id/fullname"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/isi_style"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:text="Email" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-        <EditText
-            android:id="@+id/birthday"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
-            android:layout_below="@+id/email"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/isi_style"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:text="Birthday" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_halo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nama_lengkap"
+            android:textColorHint="@color/ungu"
+            android:hint="Email"
+            android:layout_marginTop="12dp"
+            app:boxBackgroundColor="@color/putih"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Ulang_tahun"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/email_halo"
+            android:textColorHint="@color/ungu"
+            android:hint="Tanggal lahir"
+            android:layout_marginTop="12dp"
+            app:boxBackgroundColor="@color/putih"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
-            android:layout_below="@+id/birthday"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/isi_style"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:text="Username" />
+            android:layout_below="@id/Ulang_tahun"
+            android:textColorHint="@color/ungu"
+            android:hint="Username"
+            android:layout_marginTop="12dp"
+            app:boxBackgroundColor="@color/putih"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
-            android:layout_below="@+id/username"
-            android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:background="@drawable/isi_style"
-            android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-        <EditText
-            android:id="@+id/confirm"
-            android:layout_width="242dp"
-            android:layout_height="35dp"
-            android:layout_below="@+id/password"
-            android:layout_marginTop="16dp"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass_halo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:background="@drawable/isi_style"
-            android:inputType="textPassword" />
+            android:layout_below="@id/username"
+            android:textColorHint="@color/ungu"
+            android:hint="password"
+            android:layout_marginTop="12dp"
+            app:boxBackgroundColor="@color/putih"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:id="@+id/halo"
-            android:layout_width="160dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="128dp"
             android:layout_marginLeft="128dp"
@@ -130,8 +155,8 @@
             android:id="@+id/btn_daftar2"
             android:layout_width="200dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/confirm"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/pass_halo"
             android:layout_centerHorizontal="true"
             android:background="@drawable/buttonstyle"
             android:text="Daftar"
@@ -139,8 +164,6 @@
 
 
     </RelativeLayout>
-
-
 
 
 

@@ -20,13 +20,15 @@
         app:srcCompat="@drawable/fskill" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_lgin"
-        android:layout_width="match_parent"
+        android:id="@+id/email_login"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/ungu"
+        android:hint="Email"
         android:layout_below="@id/tutor3"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:hint="Email">
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -34,15 +36,17 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/pass_lgin"
-        android:layout_width="match_parent"
+        android:id="@+id/pass_login"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/email_lgin"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:hint="Password">
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/ungu"
+        android:hint="Password"
+        android:layout_below="@id/email_login"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -104,7 +108,7 @@
         android:layout_height="35dp"
         android:background="@drawable/buttonstyle"
         android:text="Login"
-        android:layout_below="@id/pass_lgin"
+        android:layout_below="@id/pass_login"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="220dp"
         android:textColor="@color/putih" />
@@ -141,7 +145,6 @@
         android:textColor="@color/ungu"
         android:textSize="50sp"
         android:textStyle="normal" />
-
 
 
 </RelativeLayout>

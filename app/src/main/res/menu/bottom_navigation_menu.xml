@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/akun"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="account"
+        />
+
+    <item
+        android:id="@+id/buku"
+        android:enabled="true"
+        android:icon="@drawable/buku"
+        android:title="belajar"/>
+
+    <item
+        android:id="@+id/belajar"
+        android:enabled="true"
+        android:icon="@drawable/buku"
+        android:title="belajar"/>
+</menu>
